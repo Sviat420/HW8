@@ -1,0 +1,108 @@
+html {
+  font-family: 'Inter', sans-serif;
+  box-sizing: content-box;
+}
+
+.modal {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 433px; 
+height: 330px;
+background-color: white;
+border-radius: 8px;
+border: 2px solid rgb(103, 96, 96);
+}
+
+.parent_modal{
+padding-left: 32px;
+padding-right: 32px;
+}
+
+.modal_header {
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+}
+
+.modal_header::after{
+content: url(./img/Shape.png);
+width: 12.42px;
+height: 12.42px;
+position: absolute;
+right: 32px;
+}
+
+.modal_p {
+font-size: 14px;
+line-height: 22px;
+background-color: #F0F1F3;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.modal_p::before {
+vertical-align: middle;
+padding-right: 10px;
+padding-left: 10px;
+display: inline-block;
+content: url(./img/Union.png);
+width: 20px;
+height: 20px;
+}
+
+.modal_p.warning {
+background-color: #FDEAE4;
+}
+
+.modal_p.warning::before{
+content: url(./img/warning.png);
+}
+
+.modal_p.attention {
+background-color: #FFF8E0;
+}
+
+.modal_p.attention::before {
+content: url(./img/attention.png);
+}
+
+.modal.affirmative {
+background-color: #E9F8EB;
+}
+
+.modal.affirmative::before {
+  content: url(./img/affirmative.png);
+}
+
+.modal_text {
+font-size: 14px;
+line-height: 22px;
+}
+
+.btns {
+padding-top: 30px;
+min-height: 50%;
+}
+
+.btn {
+text-decoration: none;
+color: #ffffff;
+padding: 10px 20px;
+border-radius: 4px;
+position: relative;
+background-color: #3E56AA;
+line-height: 20px;
+}
+
+.btn_2 {
+background: rgba(0, 16, 61, 0.06);
+color: #2C2D2E;
+}
+
+.btn_3 {
+color: #3E56AA;
+background-color: white;
+margin-left: 25%;
+}
